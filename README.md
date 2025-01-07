@@ -1,10 +1,6 @@
-# API Project - Docker Setup and Local Testing
+# Gonzalo Hernández' Room Match API - Docker Setup and Local Testing
 
 This repository contains the code for the room-match API project. In this guide, you will learn how to set up and run the API using Docker locally, as well as how to test it using the `api_request-payload.py` script.
-
-The `model-creation.ipnynb` is a code sample of some key functions for features generation, model training, end so on. It's just ilustrative. Note that the API itself has been hardcoded to emulate the Cupid API.
-
-`room_match_model.pkl` is the suposed trained model.
 
 # Directory Structure
 
@@ -14,7 +10,10 @@ room-match/
 ├── main.py
 ├── api-request-payload.py
 ├── requirements.txt
-├── Dockerfile
+├── dockerfile
+├── Cupid_API.postman_collection.json
+├── model-creation.ipynb
+├── room_match_model.pkl
 ├── tests/
 │   ├── __init__.py
 │   ├── test_unit.py
@@ -27,6 +26,9 @@ room-match/
 - `api-request-payload.py`: Script for sending a request to the API.
 - `requirements.txt`: Contains the project dependencies.
 - `Dockerfile`: The Docker configuration file to containerize the application.
+- `Cupid_API.postman_collection.json`: Postman collection with all the endpoints and expected formats.
+- `model-creation.ipnynb`: is a code sample of some key functions for features generation, model training, end so on. It's just ilustrative. Note that the API itself has been hardcoded to emulate the Cupid API.
+- `room_match_model.pkl`: is the suposed trained model.
 - `tests/`: Directory containing unit and integration tests.
   - `__init__.py`: Marks the directory as a package.
   - `test_unit.py`: Unit tests for individual components.
