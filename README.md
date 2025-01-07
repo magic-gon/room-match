@@ -8,7 +8,20 @@ The `model-creation.ipnynb` is a code sample of some key functions for features 
 
 # Directory Structure
 
-room-match/ │ ├── main.py ├── api-request-payload.py ├── requirements.txt ├── Dockerfile ├── tests/ │ ├── init.py │ ├── test_unit.py │ ├── test_integration.py │ └── test_api.py └── README.md
+~~~bash
+room-match/
+│
+├── main.py
+├── api-request-payload.py
+├── requirements.txt
+├── Dockerfile
+├── tests/
+│   ├── __init__.py
+│   ├── test_unit.py
+│   ├── test_integration.py
+│   └── test_api.py
+└── README.md
+~~~
 
 - `main.py`: The main Python script of the project.
 - `api-request-payload.py`: Script for sending a request to the API.
