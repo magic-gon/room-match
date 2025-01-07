@@ -16,3 +16,4 @@ gunicorn==21.0.0
 fastapi==0.102.0
 tqdm==4.66.1
 requests==2.31.0
+logging
