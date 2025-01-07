@@ -8,18 +8,18 @@ The `model-creation.ipnynb` is a code sample of some key functions for features 
 
 # Directory Structure
 
-room-match/
-│
-├── main.py
-├── api-request-payload.py
-├── requirements.txt
-├── Dockerfile
-├── tests/
-│   ├── __init__.py
-│   ├── test_unit.py
-│   ├── test_integration.py
-│   └── test_api.py
-└── README.md
+room-match/ │ ├── main.py ├── api-request-payload.py ├── requirements.txt ├── Dockerfile ├── tests/ │ ├── init.py │ ├── test_unit.py │ ├── test_integration.py │ └── test_api.py └── README.md
+
+- `main.py`: The main Python script of the project.
+- `api-request-payload.py`: Script for sending a request to the API.
+- `requirements.txt`: Contains the project dependencies.
+- `Dockerfile`: The Docker configuration file to containerize the application.
+- `tests/`: Directory containing unit and integration tests.
+  - `__init__.py`: Marks the directory as a package.
+  - `test_unit.py`: Unit tests for individual components.
+  - `test_integration.py`: Tests for the integration of various components.
+  - `test_api.py`: Tests specifically for the API.
+- `README.md`: This file, which provides instructions for the project.
 
 ## Prerequisites
 
@@ -41,7 +41,9 @@ To copy the code from the GitHub repository to your local machine:
    git clone https://github.com/magic-gon/room-match.git
 
 4. Navigate into the cloned repository directory:
-cd room-match
+
+   ```bash
+   cd room-match
 
 ## Step 2: Build the Docker Image
 
@@ -51,7 +53,8 @@ Next, you'll need to build the Docker image for the API.
 2. Open Docker Desktop.
 3. Build the Docker image by running the following command:
 
-docker build -t api-image .
+   ```bash
+   docker build -t api-image .
 
 This command will read the Dockerfile in the repository and build an image named api-image.
 
@@ -61,7 +64,8 @@ Once the image is built, run the API inside a Docker container.
 
 1. Run the following command to start the container:
 
-docker run -p 5000:5000 api-image
+   ```bash
+   docker run -p 5000:5000 api-image
 
 This will start the API on port 5000 inside the Docker container and map it to port 5000 on your local machine.
 
@@ -74,7 +78,8 @@ To test the API, you can use the api_request-payload.py script provided in the r
 1. Open a new terminal window or tab and navigate to the cloned repository directory.
 2. Run the following command to execute the script:
 
-python api_request-payload.py
+   ```bash
+   python api_request-payload.py
 
 ## Step 5: Clean Up
 
@@ -82,12 +87,15 @@ Once you're done testing, you can stop the Docker container and clean up:
 
 1. To stop the running container, use the following command:
 
-docker stop <container_id>
+   ```bash
+   docker stop <container_id>
 
 2. To remove the container (optional), run:
 
-docker rm <container_id>
+   ```bash
+   docker rm <container_id>
 
 3. To remove the image (optional), run:
 
-docker rmi api-image
+   ```bash
+   docker rmi api-image
