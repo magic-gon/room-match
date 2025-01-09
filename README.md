@@ -19,7 +19,9 @@ room-match/
 │   ├── test_unit.py
 │   ├── test_integration.py
 │   └── test_api.py
+├── ex-nuitee
 └── README.md
+
 ~~~
 
 - `main.py`: The main Python script of the project.
@@ -34,6 +36,7 @@ room-match/
   - `test_unit.py`: Unit tests for individual components.
   - `test_integration.py`: Tests for the integration of various components.
   - `test_api.py`: Tests specifically for the API.
+- `ex-nuitee`: virtual environment
 - `README.md`: This file, which provides instructions for the project.
 
 ## Prerequisites
